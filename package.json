@@ -1,0 +1,19 @@
+{
+  "name": "clealeroux_3_23062021",
+  "version": "1.0.0",
+  "description": "Projet 3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cpasklaire/CleaLeRoux_3_23062021.git"
+  },
+  "author": "Clea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cpasklaire/CleaLeRoux_3_23062021/issues"
+  },
+  "homepage": "https://github.com/Cpasklaire/CleaLeRoux_3_23062021#readme"
+}

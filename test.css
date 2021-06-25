@@ -1,0 +1,123 @@
+/* Générale */
+
+@font-face {
+    font-family: 'shrikhand';
+    src: url(Sass/base/police/shrikhand/Shrikhand-Regular.otf);}
+
+@font-face {
+    font-family: 'roboto';
+    src: url(Sass/base/police/Roboto/Roboto-Regular.ttf) format('truetype');}
+*
+{
+    font-family: 'roboto', Arial, serif; 
+    color: black;   
+    text-decoration: none;
+    background-color: transparent;
+    margin: 0;
+}
+
+/* acceuil en-tête */
+header
+{
+    box-shadow: rgb(129, 129, 129) 0px 5px 5px;
+    padding: 5%;
+}
+
+h1
+{
+    font-family: 'shrikhand';
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-size: 2.5em;
+}
+.fa-arrow-left
+{
+    display: none;
+}
+
+/* Localisation */
+.exploration__localisation
+{
+    background-color: rgb(235, 232, 232);
+    padding: 5%;
+    text-align: center;
+}
+.fa-map-marker-alt
+{
+    font-size: 1.3em;
+    margin-left: 15%;
+    color: rgb(34, 34, 34);
+}
+.exploration__localisation input
+{
+    border: none;
+    font-size: 1.3em;
+    padding-left: 5%;
+}
+
+/* Concept */
+.exploration__concept
+{
+    background-color: rgb(248, 248, 248);
+    text-align: center;
+    padding-top: 5%;
+    font-size: 1.2em;
+    color: grey;
+}
+.exploration__concept h2
+{
+    font-size: 1.5em;
+    font-weight: 1000;
+    padding-bottom: 5%;
+    padding: 5%;
+}
+.exploration__concept input
+{
+    margin: 10%;
+    margin-bottom: 15%;
+    border: 0;
+    border-radius: 20px;
+    background-color: #9356DC;
+    padding: 4%;
+    color: white;
+    padding-left: 6%;
+    padding-right: 6%;
+    box-shadow: rgb(129, 129, 129) 2px 3px 3px;
+}
+
+/* Fonctionnement */
+.fonctionnement h2
+{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+.fonctionnement__box--element
+{
+    border-radius: 20px;
+    box-shadow: rgb(129, 129, 129) 2px 3px 3px;
+    font-size: 1.2em;
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    margin-bottom: 5%;
+    background-color: rgb(248, 248, 248);
+    font-weight: 900;
+}
+.fonctionnement__box--element mark
+{
+    color: white;
+    background-color: #9356DC;
+    padding: 2%;
+    border-radius: 50%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.fonctionnement__box--element .fas
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    color: grey;
+}
