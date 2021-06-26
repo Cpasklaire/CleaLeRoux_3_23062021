@@ -1,4 +1,4 @@
-/* Générale */
+/* Générale 
 
 @font-face {
     font-family: 'shrikhand';
@@ -14,9 +14,9 @@
     text-decoration: none;
     background-color: transparent;
     margin: 0;
-}
+}*/
 
-/* acceuil en-tête */
+/* acceuil en-tête 
 header
 {
     box-shadow: rgb(129, 129, 129) 0px 5px 5px;
@@ -30,13 +30,9 @@ h1
     text-align: center;
     margin: 0;
     font-size: 2.5em;
-}
-.fa-arrow-left
-{
-    display: none;
-}
+}*/
 
-/* Localisation */
+/* Localisation 
 .exploration__localisation
 {
     background-color: rgb(235, 232, 232);
@@ -54,9 +50,9 @@ h1
     border: none;
     font-size: 1.3em;
     padding-left: 5%;
-}
+}*/
 
-/* Concept */
+/* Concept 
 .exploration__concept
 {
     background-color: rgb(248, 248, 248);
@@ -84,9 +80,9 @@ h1
     padding-left: 6%;
     padding-right: 6%;
     box-shadow: rgb(129, 129, 129) 2px 3px 3px;
-}
+}*/
 
-/* Fonctionnement */
+/* Fonctionnement 
 .fonctionnement h2
 {
     margin-top: 10%;
@@ -120,9 +116,9 @@ h1
     margin-left: 5%;
     margin-right: 5%;
     color: grey;
-}
+}*/
 
-/*Restaurants*/
+/*Restaurants
 .restaurant
 {
     background-color: rgb(248, 248, 248);
@@ -184,9 +180,9 @@ h1
     right: 15%;
     bottom: 35%;
     font-size: 1.7em;
-}
+}*/
 
-/* Pied de page */
+/* Pied de page 
 footer
 {
     background-color: rgb(53, 53, 53);
@@ -219,4 +215,4 @@ footer a
 {
     color: white;
     line-height: 30px;
-}
+}*/
