@@ -1,0 +1,32 @@
+/* localisation */
+.fa-map-marker-alt
+{
+    font-size: 1.3em;
+    margin-left: 15%;
+    color: rgb(34, 34, 34);
+}
+
+/* fonctionnement */
+.fonctionnement__box--element .fas
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    color: grey;
+}
+
+/* article */
+.restaurant__box .fas
+{
+    color: $couleur-primaire;
+    position: absolute;
+    right: 15%;
+    bottom: 35%;
+    font-size: 1.7em;
+}
+
+/* footer */ 
+footer .fas
+{
+    color: white;
+    padding-right: 2%;
+}
