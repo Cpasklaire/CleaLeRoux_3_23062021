@@ -13,7 +13,8 @@
         "sass/layout/_header.scss",
         "sass/layout/_localisation.scss",
         "sass/utils/_reset.scss",
-        "sass/utils/_variables.scss"
+        "sass/utils/_variables.scss",
+        "sass/composants/_degrade.scss"
     ],
     "names": [],
     "file": "style.css"
