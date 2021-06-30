@@ -26,14 +26,14 @@
 {
     position: absolute;
     z-index: 1;
-    background-color: #99E2D0;
+    background-color: $couleur-tertiaire;
     right: 5%;
     top: 5%;
     border-radius: 5px;
     padding: 3%;
     font-style: normal;
     font-weight: 900;
-    color: $couleur-tertiaire;
+    color:darken($couleur-tertiaire, $amount: 40%)
 }
 .restaurant__box--detail
 {

@@ -1,0 +1,19 @@
+{
+  "name": "homyfood",
+  "version": "1.0.0",
+  "description": "projet 3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./style.scss:./style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cpasklaire/CleaLeRoux_3_23062021.git"
+  },
+  "author": "moi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cpasklaire/CleaLeRoux_3_23062021/issues"
+  },
+  "homepage": "https://github.com/Cpasklaire/CleaLeRoux_3_23062021#readme"
+}

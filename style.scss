@@ -1,13 +1,19 @@
-@import "./sass/base/police/_police.scss";
-@import "./sass/composants/_icone.scss";
-@import "./sass/composants/_titre.scss";
-@import "./sass/layout/_article.scss";
-@import "./sass/layout/_concept.scss";
-@import "./sass/layout/_fonctionnement.scss";
-@import "./sass/layout/_footer.scss";
-@import "./sass/layout/_header.scss";
-@import "./sass/layout/_localisation.scss";
 @import "./sass/utils/_reset.scss";
+@import "./sass/base/police/_police.scss";
 @import "./sass/utils/_variables.scss";
+
+@import "./sass/composants/_titre.scss";
+@import "./sass/composants/_icone.scss";
 @import "./sass/composants/_bouton.scss";
 @import "./sass/composants/_degrade.scss";
+
+@import "./sass/layout/_header.scss";
+@import "./sass/layout/_localisation.scss";
+@import "./sass/layout/_concept.scss";
+@import "./sass/layout/_fonctionnement.scss";
+@import "./sass/layout/_article.scss";
+@import "./sass/layout/_footer.scss";
+
+
+
+
