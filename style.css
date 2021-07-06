@@ -109,6 +109,21 @@ footer .fas {
   line-height: 500%;
 }
 
+.animation-bouton {
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+}
+
+.animation-bouton :hover :active {
+  background: black;
+  -webkit-box-shadow: #818181 6px 7px 7px;
+          box-shadow: #818181 6px 7px 7px;
+}
+
 .degrade {
   background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
   background: linear-gradient(0deg, #9356DC, #FF79DA);

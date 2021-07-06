@@ -1,0 +1,11 @@
+.animation-bouton
+{
+    transition-property: transform;
+    transition-duration: 1000ms;
+}
+
+.animation-bouton :hover
+{
+    background: lighten(20%)
+    box-shadow: $couleur-ombre 6px 7px 7px;
+}
