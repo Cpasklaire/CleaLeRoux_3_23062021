@@ -1,0 +1,118 @@
+@media screen and (min-width: 768px)
+{
+    /*.exploration + .fonctionnement
+    {
+        display: flex;
+        flex-direction: row-reverse;
+    }*/
+    /* Localisation + concept */
+    .exploration
+    {
+        flex-direction: column-reverse;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .exploration__concept
+    {
+        background-color: transparent;
+    }
+    .exploration__localisation
+    {
+        height: 5%;
+        border-radius: 20px;
+        padding: 1%;
+        width: 25%;
+    }
+    .fa-map-marker-alt
+    {
+        display: none;
+    }
+     /*Fonctionnement*/
+     .fonctionnement
+     {
+         background-color: $couleur-fontclaire;
+         border-radius: 20px;
+         margin: 3%;
+     }
+     .fonctionnement .fas
+     {
+         display: none;
+     }
+     .fonctionnement__box
+     {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-right: 3%;
+        flex-wrap: wrap;
+     }
+     .fonctionnement__box--element
+     {
+         padding: 2%;
+         width: 24%;
+         background-color: white;
+         white-space: nowrap;
+     }
+
+     /* Restaurants */
+     .restaurant 
+     {
+         padding: 3%;
+         margin: 3%;
+         border-radius: 20px;
+         background-color: transparent;
+     }
+     .restaurant__box
+     {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: space-between;
+     }
+     .restaurant__box article
+     {
+         width: 45%;
+         max-width: 550px;
+     } 
+     .restaurant__box--detail
+     {
+         top: 0;
+         left: 60%;
+         width: initial;
+     }
+     .restaurant__box em
+     {
+         left: 5%;
+         right: initial;
+     }
+     .restaurant__box .fas
+     {
+         font-size: 2em;
+         bottom: 10%;
+     }
+
+     /* Pied de page */
+     footer
+     {
+         padding: 1%;
+     }
+     footer nav
+     {
+         display: flex;
+         justify-content: space-between;
+         flex-direction: row;
+         margin: 5%;
+         padding: 0;
+     }
+     footer .fas
+     {
+         display: none;
+     }
+     footer h4
+     {
+         padding: 3%;
+     }
+
+
+}
