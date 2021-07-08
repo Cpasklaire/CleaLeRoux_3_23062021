@@ -1,39 +1,39 @@
 @media screen and (min-width: 768px)
 {
-    /*.exploration + .fonctionnement
-    {
-        display: flex;
-        flex-direction: row-reverse;
-    }*/
     /* Localisation + concept */
-    .exploration
+    .exploration__localisation
     {
-        flex-direction: column-reverse;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        padding: 2%;
+    }
+    .exploration__localisation input
+    {
+        padding-left: 1%;
     }
     .exploration__concept
     {
-        background-color: transparent;
+        padding-top: 0%;
     }
-    .exploration__localisation
+    .exploration__concept h2
     {
-        height: 5%;
-        border-radius: 20px;
-        padding: 1%;
-        width: 25%;
+        padding: 2%;
     }
-    .fa-map-marker-alt
+    .sautligne
     {
         display: none;
+    }
+    .exploration__concept a
+    {
+        padding: 1%;
     }
      /*Fonctionnement*/
      .fonctionnement
      {
-         background-color: $couleur-fontclaire;
-         border-radius: 20px;
-         margin: 3%;
+        background-color: rgb(235, 232, 232);
+     }
+     .fonctionnement h2
+     {
+         margin-top: 0;
+         padding-top: 2%;
      }
      .fonctionnement .fas
      {
@@ -58,10 +58,12 @@
      /* Restaurants */
      .restaurant 
      {
-         padding: 3%;
-         margin: 3%;
+         padding: 0%;
+         margin: 0%;
+         margin-right: 3%;
          border-radius: 20px;
          background-color: transparent;
+         padding-top: 2%;
      }
      .restaurant__box
      {
@@ -72,7 +74,6 @@
      }
      .restaurant__box article
      {
-         width: 45%;
          max-width: 550px;
      } 
      .restaurant__box--detail
@@ -91,6 +92,11 @@
          font-size: 2em;
          bottom: 10%;
      }
+     .restaurant__box .far
+     {
+        font-size: 2em;
+        bottom: 10%;
+    }
 
      /* Pied de page */
      footer
@@ -102,7 +108,7 @@
          display: flex;
          justify-content: space-between;
          flex-direction: row;
-         margin: 5%;
+         margin: 3%;
          padding: 0;
      }
      footer .fas
@@ -111,7 +117,7 @@
      }
      footer h4
      {
-         padding: 3%;
+         display: none;
      }
 
 
