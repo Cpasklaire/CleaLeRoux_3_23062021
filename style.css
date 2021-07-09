@@ -16,8 +16,7 @@
   src: url(Sass/base/police/Roboto/Roboto-Regular.ttf) format("truetype");
 }
 
-/* header */
-h1, h5 {
+h5 {
   font-family: 'shrikhand';
   width: 100%;
   text-align: center;
@@ -50,16 +49,6 @@ h1, h5 {
   padding-bottom: 3%;
 }
 
-/*footer */
-footer h4 {
-  font-family: 'shrikhand';
-  color: white;
-  margin: 5%;
-  font-size: 1.5em;
-  padding-top: 10%;
-  margin-top: 0;
-}
-
 /* localisation */
 .fa-map-marker-alt {
   font-size: 1.3em;
@@ -75,7 +64,7 @@ footer h4 {
 }
 
 /* article */
-.restaurant__box .fas {
+.coeurrempli {
   color: transparent;
   background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
   background: linear-gradient(0deg, #9356DC, #FF79DA);
@@ -87,25 +76,35 @@ footer h4 {
   z-index: 2;
 }
 
-.restaurant__box .far {
-  color: black;
+.calque {
+  position: absolute;
+  right: 6%;
+  bottom: 6%;
+  font-size: 4em;
+  z-index: 3;
+  color: white;
   background-color: white;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+}
+
+.coeurvide {
+  color: black;
+  background-color: transparent;
   position: absolute;
   right: 15%;
   bottom: 35%;
   font-size: 1.7em;
-  z-index: 3;
+  z-index: 4;
 }
 
-.restaurant__box .far:hover {
-  -webkit-transform-origin: center top;
-          transform-origin: center top;
+.coeurvide:hover + .calque {
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
-  -webkit-transition: -webkit-transform 2000ms;
-  transition: -webkit-transform 2000ms;
-  transition: transform 2000ms;
-  transition: transform 2000ms, -webkit-transform 2000ms;
 }
 
 /* footer */
@@ -196,24 +195,40 @@ h5 {
   font-size: 4em;
 }
 
-span {
+.chargement span {
   font-family: "shrikhand";
 }
 
-/*
-.ohmy
-{
-    animation: coloration 1s linear 0s  both;
+.ohmy {
+  -webkit-animation: coloration 2s 1s;
+          animation: coloration 2s 1s;
+  padding: 1%;
 }
 
-@keyframes coloration 
-{
-    to
-    {    color: transparent;
-        background: -webkit-gradient($couleur-primaire);
-        -webkit-background-clip: text;}
+.food {
+  -webkit-animation: coloration 2s 2s;
+          animation: coloration 2s 2s;
+  padding: 1%;
 }
-*/
+
+@-webkit-keyframes coloration {
+  100% {
+    color: transparent;
+    background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+    background: linear-gradient(0deg, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+  }
+}
+
+@keyframes coloration {
+  100% {
+    color: transparent;
+    background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+    background: linear-gradient(0deg, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+  }
+}
+
 .chargement .fas {
   position: relative;
   color: #9356DC;
@@ -223,8 +238,8 @@ span {
 .fa-fish {
   top: 40%;
   left: 30%;
-  -webkit-animation: poisson 1s linear 1s  both;
-          animation: poisson 1s linear 1s  both;
+  -webkit-animation: poisson 1s 1s both;
+          animation: poisson 1s 1s both;
 }
 
 @-webkit-keyframes poisson {
@@ -270,8 +285,8 @@ span {
 .fa-pepper-hot {
   top: 40%;
   left: 55%;
-  -webkit-animation: piment 1s linear 2s  both;
-          animation: piment 1s linear 2s  both;
+  -webkit-animation: piment 1s 2s  both;
+          animation: piment 1s 2s  both;
 }
 
 @-webkit-keyframes piment {
@@ -318,6 +333,20 @@ header {
   -webkit-box-shadow: #818181 0px 5px 5px;
           box-shadow: #818181 0px 5px 5px;
   padding: 5%;
+  position: relative;
+}
+
+header a {
+  position: absolute;
+  top: 40%;
+}
+
+header h1 {
+  font-family: "shrikhand";
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 2.5em;
 }
 
 .exploration__localisation {
@@ -327,7 +356,7 @@ header {
 }
 
 .exploration__concept {
-  background-color: #f8f8f8;
+  background-color: #f6f6f6;
   text-align: center;
   padding-top: 5%;
   font-size: 1.2em;
@@ -344,7 +373,7 @@ header {
   padding-top: 8%;
   padding-bottom: 8%;
   margin-bottom: 5%;
-  background-color: #f8f8f8;
+  background-color: #f6f6f6;
   font-weight: 900;
 }
 
@@ -409,19 +438,58 @@ footer {
   padding-bottom: 5%;
 }
 
+footer h4 {
+  font-family: "shrikhand";
+  color: white;
+  margin: 5%;
+  font-size: 1.2em;
+  padding-top: 5%;
+  margin-top: 0;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
 footer nav {
   list-style: none;
   margin-left: 5%;
 }
 
-footer strong {
+footer strong, footer a {
   color: white;
   line-height: 30px;
 }
 
-footer a {
-  color: white;
-  line-height: 30px;
+footer strong {
+  font-weight: bold;
+}
+
+.top {
+  overflow: hidden;
+  position: relative;
+}
+
+.top img {
+  width: 400px;
+  height: 250px;
+  -o-object-position: -20px;
+     object-position: -20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.top__nom {
+  position: absolute;
+  border-radius: 40px;
+  background-color: #f6f6f6;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  margin: 0;
+  bottom: -15%;
+  width: 100%;
+}
+
+.page {
+  background-color: #f6f6f6;
 }
 
 @media screen and (min-width: 768px) {
@@ -510,11 +578,11 @@ footer a {
     left: 5%;
     right: initial;
   }
-  .restaurant__box .fas {
+  .restaurant__box .coeurrempli {
     font-size: 2em;
     bottom: 10%;
   }
-  .restaurant__box .far {
+  .restaurant__box .coeurvide {
     font-size: 2em;
     bottom: 10%;
   }

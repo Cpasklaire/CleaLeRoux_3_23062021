@@ -25,25 +25,30 @@ h5
     top: 50%;
     font-size: 4em;
 }
-span
+.chargement span
 {
     font-family: $font-titre;
-
 }
-/*
 .ohmy
 {
-    animation: coloration 1s linear 0s  both;
+    animation: coloration 2s 1s;
+    padding: 1%;
 }
-
+.food
+{
+    animation: coloration 2s 2s;
+    padding: 1%;
+}
 @keyframes coloration 
 {
-    to
-    {    color: transparent;
-        background: -webkit-gradient($couleur-primaire);
-        -webkit-background-clip: text;}
+    100%
+    {   
+        color: transparent;
+        background: $degrade;
+        -webkit-background-clip: text;
+    }
 }
-*/
+
 .chargement .fas
 {
     position: relative;
@@ -54,7 +59,7 @@ span
 {
     top: 40%;
     left: 30%;
-    animation: poisson 1s linear 1s  both;
+    animation: poisson 1s 1s both;
 }
 @keyframes poisson {
     25%
@@ -79,7 +84,7 @@ span
 {
     top: 40%;
     left: 55%;
-    animation: piment 1s linear 2s  both;
+    animation: piment 1s 2s  both;
 }
 @keyframes piment {
     25%

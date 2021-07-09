@@ -2,19 +2,30 @@ footer
 {
     background-color: rgb(53, 53, 53);
     padding-bottom: 5%;
-}
-footer nav
-{
-    list-style: none;
-    margin-left: 5%;
-}
-footer strong
-{
-    color: white;
-    line-height: 30px;
-}
-footer a
-{
-    color: white;
-    line-height: 30px;
+    h4
+    {
+        font-family: $font-titre;
+        color: white;
+        margin: 5%;
+        font-size: 1.2em;
+        padding-top: 5%;
+        margin-top: 0;
+        font-weight: normal;
+        letter-spacing: 1px;
+    }
+        nav
+        {
+            list-style: none;
+            margin-left: 5%;
+        }
+            strong, a
+            {
+                color: white;
+                line-height: 30px;
+                
+            }
+                strong
+                {
+                    font-weight: bold;
+                }
 }
