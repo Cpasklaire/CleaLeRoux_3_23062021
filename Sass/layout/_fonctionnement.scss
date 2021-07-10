@@ -1,23 +1,38 @@
-
-.fonctionnement__box--element
+.fonctionnement
 {
-    border-radius: 20px;
-    box-shadow: $couleur-ombre 2px 3px 3px;
-    font-size: 1.2em;
-    width: 90%;
-    margin-left: 5%;
-    padding-top: 8%;
-    padding-bottom: 8%;
-    margin-bottom: 5%;
-    background-color: $couleur-fontclaire;
-    font-weight: 900;
-}
-.fonctionnement__box--element mark
-{
-    color: white;
-    background-color: $couleur-primaire;
-    padding: 2%;
-    border-radius: 50%;
-    padding-left: 4%;
-    padding-right: 4%;
+    h2
+    {
+        margin-top: 10%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+    }
+    .--element
+    {
+        border-radius: 20px;
+        box-shadow: $couleur-ombre 2px 3px 3px;
+        font-size: 1.2em;
+        width: 90%;
+        margin-left: 5%;
+        padding-top: 8%;
+        padding-bottom: 8%;
+        margin-bottom: 5%;
+        background-color: $couleur-fontclaire;
+        font-weight: 900;
+        mark
+        {
+            color: white;
+            background-color: $couleur-primaire;
+            padding: 2%;
+            border-radius: 50%;
+            padding-left: 4%;
+            padding-right: 4%;
+        }
+        .fas
+        {
+            margin-left: 5%;
+            margin-right: 5%;
+            color: grey;
+        }
+        
+    }
 }

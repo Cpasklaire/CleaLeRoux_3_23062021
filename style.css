@@ -16,55 +16,7 @@
   src: url(Sass/base/police/Roboto/Roboto-Regular.ttf) format("truetype");
 }
 
-h5 {
-  font-family: 'shrikhand';
-  width: 100%;
-  text-align: center;
-  margin: 0;
-  font-size: 2.5em;
-}
-
-/*concept*/
-.exploration__concept h2 {
-  font-size: 1.5em;
-  font-weight: 1000;
-  padding-bottom: 5%;
-  padding: 5%;
-}
-
-/*fonctionnement*/
-.fonctionnement h2 {
-  margin-top: 10%;
-  margin-bottom: 5%;
-  margin-left: 5%;
-}
-
-/* article */
-.restaurant h2 {
-  padding-bottom: 5%;
-  padding-left: 5%;
-}
-
-.restaurant__box--detail h3 {
-  padding-bottom: 3%;
-}
-
-/* localisation */
-.fa-map-marker-alt {
-  font-size: 1.3em;
-  margin-left: 15%;
-  color: #222222;
-}
-
-/* fonctionnement */
-.fonctionnement__box--element .fas {
-  margin-left: 5%;
-  margin-right: 5%;
-  color: grey;
-}
-
-/* article */
-.coeurrempli {
+.--coeurrempli {
   color: transparent;
   background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
   background: linear-gradient(0deg, #9356DC, #FF79DA);
@@ -76,7 +28,7 @@ h5 {
   z-index: 2;
 }
 
-.calque {
+.--calque {
   position: absolute;
   right: 6%;
   bottom: 6%;
@@ -92,7 +44,7 @@ h5 {
           transform-origin: center top;
 }
 
-.coeurvide {
+.--coeurvide {
   color: black;
   background-color: transparent;
   position: absolute;
@@ -102,26 +54,12 @@ h5 {
   z-index: 4;
 }
 
-.coeurvide:hover + .calque {
+.--coeurvide:hover + .--calque {
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
 }
 
-/* footer */
-footer .fas {
-  color: white;
-  padding-right: 2%;
-}
-
-/*localisation*/
-.exploration__localisation input {
-  border: none;
-  font-size: 1.3em;
-  padding-left: 5%;
-}
-
-/*concept*/
-.exploration__concept a {
+.__concept a {
   margin: 10%;
   margin-bottom: 15%;
   border-radius: 20px;
@@ -136,35 +74,14 @@ footer .fas {
   background: linear-gradient(0deg, #9356DC, #FF79DA);
 }
 
-.exploration__concept a:hover {
+.__concept a:hover {
   -webkit-box-shadow: #818181 3px 5px 5px;
           box-shadow: #818181 3px 5px 5px;
   -webkit-filter: brightness(110%);
           filter: brightness(110%);
 }
 
-/*
-.animation-bouton
-{
-    transition-property: transform;
-    transition-duration: 1000ms;
-}
-
-.animation-bouton :hover
-{
-    background: lighten(20%)
-}
-*/
-.chargement {
-  position: absolute;
-  background-color: white;
-  width: 100%;
-  height: 100%;
-  -webkit-animation: disparition 0s linear 3s both;
-          animation: disparition 0s linear 3s both;
-  z-index: 2;
-}
-
+/*chargement*/
 @-webkit-keyframes disparition {
   to {
     background-color: transparent;
@@ -176,7 +93,6 @@ footer .fas {
             box-sizing: border-box;
   }
 }
-
 @keyframes disparition {
   to {
     background-color: transparent;
@@ -187,28 +103,6 @@ footer .fas {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-}
-
-h5 {
-  position: relative;
-  top: 50%;
-  font-size: 4em;
-}
-
-.chargement span {
-  font-family: "shrikhand";
-}
-
-.ohmy {
-  -webkit-animation: coloration 2s 1s;
-          animation: coloration 2s 1s;
-  padding: 1%;
-}
-
-.food {
-  -webkit-animation: coloration 2s 2s;
-          animation: coloration 2s 2s;
-  padding: 1%;
 }
 
 @-webkit-keyframes coloration {
@@ -227,19 +121,6 @@ h5 {
     background: linear-gradient(0deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
   }
-}
-
-.chargement .fas {
-  position: relative;
-  color: #9356DC;
-  font-size: 4em;
-}
-
-.fa-fish {
-  top: 40%;
-  left: 30%;
-  -webkit-animation: poisson 1s 1s both;
-          animation: poisson 1s 1s both;
 }
 
 @-webkit-keyframes poisson {
@@ -282,13 +163,6 @@ h5 {
   }
 }
 
-.fa-pepper-hot {
-  top: 40%;
-  left: 55%;
-  -webkit-animation: piment 1s 2s  both;
-          animation: piment 1s 2s  both;
-}
-
 @-webkit-keyframes piment {
   25% {
     -webkit-transform: translateX(-10%) translateY(10%);
@@ -329,6 +203,59 @@ h5 {
   }
 }
 
+.chargement {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: disparition 0s linear 3s both;
+          animation: disparition 0s linear 3s both;
+  z-index: 2;
+}
+
+.chargement .fas {
+  position: relative;
+  color: #9356DC;
+  font-size: 4em;
+}
+
+.chargement .fa-fish {
+  top: 40%;
+  left: 30%;
+  -webkit-animation: poisson 1s 1s both;
+          animation: poisson 1s 1s both;
+}
+
+.chargement .fa-pepper-hot {
+  top: 40%;
+  left: 55%;
+  -webkit-animation: piment 1s 2s  both;
+          animation: piment 1s 2s  both;
+}
+
+.chargement .__ohmyfood {
+  position: relative;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.chargement .__ohmyfood .--ohmy {
+  -webkit-animation: coloration 2s 1s;
+          animation: coloration 2s 1s;
+  padding: 1%;
+  font-family: "shrikhand";
+}
+
+.chargement .__ohmyfood .--food {
+  -webkit-animation: coloration 2s 2s;
+          animation: coloration 2s 2s;
+  padding: 1%;
+  font-family: "shrikhand";
+}
+
 header {
   -webkit-box-shadow: #818181 0px 5px 5px;
           box-shadow: #818181 0px 5px 5px;
@@ -349,13 +276,25 @@ header h1 {
   font-size: 2.5em;
 }
 
-.exploration__localisation {
+.__search {
   background-color: #ebe8e8;
   padding: 5%;
   text-align: center;
 }
 
-.exploration__concept {
+.__search .fa-map-marker-alt {
+  font-size: 1.3em;
+  margin-left: 15%;
+  color: #222222;
+}
+
+.__search input {
+  border: none;
+  font-size: 1.3em;
+  padding-left: 5%;
+}
+
+.__concept {
   background-color: #f6f6f6;
   text-align: center;
   padding-top: 5%;
@@ -363,7 +302,20 @@ header h1 {
   color: grey;
 }
 
-.fonctionnement__box--element {
+.__concept h2 {
+  font-size: 1.5em;
+  font-weight: 1000;
+  padding-bottom: 5%;
+  padding: 5%;
+}
+
+.fonctionnement h2 {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+}
+
+.fonctionnement .--element {
   border-radius: 20px;
   -webkit-box-shadow: #818181 2px 3px 3px;
           box-shadow: #818181 2px 3px 3px;
@@ -377,7 +329,7 @@ header h1 {
   font-weight: 900;
 }
 
-.fonctionnement__box--element mark {
+.fonctionnement .--element mark {
   color: white;
   background-color: #9356DC;
   padding: 2%;
@@ -386,13 +338,24 @@ header h1 {
   padding-right: 4%;
 }
 
+.fonctionnement .--element .fas {
+  margin-left: 5%;
+  margin-right: 5%;
+  color: grey;
+}
+
 .restaurant {
   background-color: #f8f8f8;
   padding-top: 15%;
   padding-bottom: 10%;
 }
 
-.restaurant__box article {
+.restaurant h2 {
+  padding-bottom: 5%;
+  padding-left: 5%;
+}
+
+.restaurant .__box article {
   margin-left: 5%;
   width: 340px;
   height: 250px;
@@ -404,14 +367,14 @@ header h1 {
           box-shadow: #818181 2px 3px 3px;
 }
 
-.restaurant__box img {
+.restaurant .__box img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 340px;
   height: 250px;
 }
 
-.restaurant__box em {
+.restaurant .__box em {
   position: absolute;
   z-index: 1;
   background-color: #99E2D0;
@@ -424,13 +387,17 @@ header h1 {
   color: #278870;
 }
 
-.restaurant__box--detail {
+.restaurant .__box .--detail {
   position: absolute;
   z-index: 1;
   background-color: white;
   bottom: 0;
   width: 100%;
   padding: 5%;
+}
+
+.restaurant .__box .--detail h3 {
+  padding-bottom: 3%;
 }
 
 footer {
@@ -447,6 +414,11 @@ footer h4 {
   margin-top: 0;
   font-weight: normal;
   letter-spacing: 1px;
+}
+
+footer .fas {
+  color: white;
+  padding-right: 2%;
 }
 
 footer nav {
@@ -477,7 +449,7 @@ footer strong {
      object-fit: cover;
 }
 
-.top__nom {
+.top .__nom {
   position: absolute;
   border-radius: 40px;
   background-color: #f6f6f6;
@@ -488,28 +460,24 @@ footer strong {
   width: 100%;
 }
 
-.page {
-  background-color: #f6f6f6;
-}
-
 @media screen and (min-width: 768px) {
   /* Localisation + concept */
-  .exploration__localisation {
+  .__search {
     padding: 2%;
   }
-  .exploration__localisation input {
+  .__search input {
     padding-left: 1%;
   }
-  .exploration__concept {
+  .__concept {
     padding-top: 0%;
   }
-  .exploration__concept h2 {
+  .__concept h2 {
     padding: 2%;
   }
-  .sautligne {
+  .__concept .--sautligne {
     display: none;
   }
-  .exploration__concept a {
+  .__concept a {
     padding: 1%;
   }
   /*Fonctionnement*/

@@ -2,10 +2,9 @@
 @import "./sass/base/police/_police.scss";
 @import "./sass/utils/_variables.scss";
 
-@import "./sass/composants/_titre.scss";
-@import "./sass/composants/_icone.scss";
+@import "./sass/composants/_coeur.scss";
 @import "./sass/composants/_bouton.scss";
-@import "./sass/composants/_animationbouton.scss";
+@import "./sass/composants/_keyframes.scss";
 
 @import "./sass/layout/_chargement.scss";
 @import "./sass/layout/_header.scss";
@@ -18,5 +17,3 @@
 @import "./sass/layout/pages/_top.scss";
 
 @import "./sass/responsive/_desktop.scss";
-
-

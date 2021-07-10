@@ -1,21 +1,4 @@
-/* localisation */
-.fa-map-marker-alt
-{
-    font-size: 1.3em;
-    margin-left: 15%;
-    color: rgb(34, 34, 34);
-}
-
-/* fonctionnement */
-.fonctionnement__box--element .fas
-{
-    margin-left: 5%;
-    margin-right: 5%;
-    color: grey;
-}
-
-/* article */
-.coeurrempli
+.--coeurrempli
 {
     color: transparent;
     background: $degrade;
@@ -26,7 +9,7 @@
     font-size: 1.7em;
     z-index: 2;
 }
-.calque
+.--calque
 {
     position: absolute;
     right: 6%;
@@ -38,7 +21,7 @@
     transition: transform 500ms;
     transform-origin: center top;
 }
-.coeurvide
+.--coeurvide
 {
     color: black;
     background-color: transparent;
@@ -47,15 +30,8 @@
     bottom: 35%;
     font-size: 1.7em;
     z-index: 4;
-        &:hover + .calque
+        &:hover + .--calque
         {
         transform: scaleY(0);
         }
-}
-
-/* footer */ 
-footer .fas
-{
-    color: white;
-    padding-right: 2%;
 }

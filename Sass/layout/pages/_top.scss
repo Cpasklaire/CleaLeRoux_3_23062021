@@ -2,28 +2,24 @@
 {
     overflow: hidden;
     position: relative;
-}
-.top img
-{
-    width: 400px;
-    height: 250px;
-    object-position: -20px;
-    object-fit: cover;
-    
-}
-.top__nom
-{
-    position: absolute;
-    border-radius: 40px;
-    background-color: $couleur-fontclaire;
-    padding-top: 5%;
-    padding-bottom: 10%;
-    margin: 0;
-    bottom: -15%;
-    width: 100%;
-    
-}
-.page
-{
-    background-color: $couleur-fontclaire;
+    img
+    {
+        width: 400px;
+        height: 250px;
+        object-position: -20px;
+        object-fit: cover;
+        
+    }
+    .__nom
+    {
+        position: absolute;
+        border-radius: 40px;
+        background-color: $couleur-fontclaire;
+        padding-top: 5%;
+        padding-bottom: 10%;
+        margin: 0;
+        bottom: -15%;
+        width: 100%;
+        
+    }
 }
