@@ -21,6 +21,7 @@
     h4 
     {
         font-weight: bold;
+        font-size: 1.2em;
         
     }
     article
@@ -57,12 +58,13 @@
             text-overflow: ellipsis;
             overflow: hidden;
             line-height: 1em;
+            font-size: 0.9em;
         }
         .__check
         {
             position: relative;
             height: 100%;
-            width: 60px;
+            width: 40px;
 
             span
             {

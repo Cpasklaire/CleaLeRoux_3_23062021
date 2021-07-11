@@ -1,0 +1,25 @@
+.restaurant .__box
+{
+    img
+    {
+        object-fit: cover;
+        width: 340px;
+        height: 250px;            
+    }
+        .--lapalettedugout
+        {
+            object-position: -20px -50px;
+        }
+        .--lanoteenchantee
+        {
+            object-position: 0px -150px;
+        }
+        .--alafrancaise
+        {
+            object-position: 0px -60px;
+        }
+        .--ledelicedessens
+        {
+            object-position: -15px -70px;
+        }
+}

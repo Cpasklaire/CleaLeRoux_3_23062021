@@ -5,10 +5,8 @@
     img
     {
         width: 400px;
-        height: 250px;
-        object-position: -20px;
-        object-fit: cover;
-        
+        height: 300px;
+        object-fit: cover;  
     }
     .__nom
     {
@@ -16,7 +14,7 @@
         border-radius: 40px;
         background-color: $couleur-fontclaire;
         padding-top: 9%;
-        padding-bottom: 10%;
+        padding-bottom: 12%;
         margin: 0;
         bottom: -15%;
         width: 100%;
@@ -25,6 +23,6 @@
     {
         font-family: $font-titre;
         margin-left: 3%;
-        font-size: 2em;
+        font-size: 1.9em;
     }
 }

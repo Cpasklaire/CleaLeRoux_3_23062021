@@ -41,18 +41,19 @@
     .--coeurrempli
     {
         right: 10%;
-        bottom: 50%;
+        bottom: 45%;
     }
     .--calque
     {
-        right: 10%;
+        right: 9%;
         bottom: 40%;
+        font-size: 2em;
         color: $couleur-fontclaire;
         background-color: $couleur-fontclaire;
     }
     .--coeurvide
     {
         right: 10%;
-        bottom: 50%;
+        bottom: 45%;
     }
 }

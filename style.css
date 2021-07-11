@@ -61,19 +61,20 @@
 
 .top .--coeurrempli {
   right: 10%;
-  bottom: 50%;
+  bottom: 45%;
 }
 
 .top .--calque {
-  right: 10%;
+  right: 9%;
   bottom: 40%;
+  font-size: 2em;
   color: #f6f6f6;
   background-color: #f6f6f6;
 }
 
 .top .--coeurvide {
   right: 10%;
-  bottom: 50%;
+  bottom: 45%;
 }
 
 .__concept a, .repas .commande {
@@ -293,6 +294,33 @@
   }
 }
 
+.restaurant .__box img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 340px;
+  height: 250px;
+}
+
+.restaurant .__box .--lapalettedugout {
+  -o-object-position: -20px -50px;
+     object-position: -20px -50px;
+}
+
+.restaurant .__box .--lanoteenchantee {
+  -o-object-position: 0px -150px;
+     object-position: 0px -150px;
+}
+
+.restaurant .__box .--alafrancaise {
+  -o-object-position: 0px -60px;
+     object-position: 0px -60px;
+}
+
+.restaurant .__box .--ledelicedessens {
+  -o-object-position: -15px -70px;
+     object-position: -15px -70px;
+}
+
 .main {
   -webkit-animation-name: font;
           animation-name: font;
@@ -492,13 +520,6 @@ header h1 {
           box-shadow: #818181 2px 3px 3px;
 }
 
-.restaurant .__box img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 340px;
-  height: 250px;
-}
-
 .restaurant .__box em {
   position: absolute;
   z-index: 1;
@@ -578,9 +599,7 @@ footer strong {
 
 .top img {
   width: 400px;
-  height: 250px;
-  -o-object-position: -20px;
-     object-position: -20px;
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -590,7 +609,7 @@ footer strong {
   border-radius: 40px;
   background-color: #f6f6f6;
   padding-top: 9%;
-  padding-bottom: 10%;
+  padding-bottom: 12%;
   margin: 0;
   bottom: -15%;
   width: 100%;
@@ -599,7 +618,7 @@ footer strong {
 .top h2 {
   font-family: "shrikhand";
   margin-left: 3%;
-  font-size: 2em;
+  font-size: 1.9em;
 }
 
 .repas {
@@ -629,6 +648,7 @@ footer strong {
 
 .repas h4 {
   font-weight: bold;
+  font-size: 1.2em;
 }
 
 .repas article {
@@ -675,12 +695,13 @@ footer strong {
   text-overflow: ellipsis;
   overflow: hidden;
   line-height: 1em;
+  font-size: 0.9em;
 }
 
 .repas article .__check {
   position: relative;
   height: 100%;
-  width: 60px;
+  width: 40px;
 }
 
 .repas article .__check span {
