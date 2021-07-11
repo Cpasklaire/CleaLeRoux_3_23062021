@@ -25,3 +25,23 @@
     padding-left: 10%;
     padding-right: 10%;
 }
+
+@media screen and (min-width: 813px)
+{
+    .__concept a, .repas .commande
+    {
+        padding: 1%;
+    }
+    .__concept a
+    {
+        margin: 20%;
+        margin-bottom: 15%;
+    }
+    .repas .commande
+    {
+        margin-left: 40%;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 2em;
+    }
+}

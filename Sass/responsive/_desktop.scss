@@ -1,125 +1,127 @@
-@media screen and (min-width: 768px)
+@media screen and (min-width: 813px)
 {
-    /* Localisation + concept */
-    .__search
+    .chargement
     {
-        padding: 2%;
-        input
+        span 
+        {
+            font-size: 3em;
+        }
+        .fas
+        {
+            font-size: 5em;
+            top: 20%;
+        }
+        .fa-fish
+        {
+            left: 30%;
+        }
+        .fa-pepper-hot
+        {
+            left: 60%;
+        }
+    }
+
+    header h1 
+    {
+        font-size: 4em;
+        line-height: 0;
+    }
+
+    .exploration
+    {
+        .__search
+        {
+            padding: 2%;
+
+            .fa-map-marker-alt
+            {
+                margin: 0;
+            }
+            input 
             {
                 padding-left: 1%;
             }
-    }
-    .__concept
-    {
-        padding-top: 0%;
-        h2
-        {
-            padding: 2%;
         }
-        .--sautligne    
+
+        .__concept
+        {
+            padding-top: 1%;
+            h2 
+            {
+                padding: 1%;
+                margin: 0;
+            }
+            .--sautligne
+            {
+                display: none;
+            }
+        }
+    }
+
+    .fonctionnement
+    {
+        h2 
+        {
+            margin: 3%;
+            margin-left: 5%;
+        }
+        .__box
+        {
+            display: flex;
+            margin-right: 5%;
+            .--element
+            {
+                width: 30%;
+                padding-top: 3%;
+                padding-bottom: 3%;
+
+                .fa-mobile-alt
+                {
+                    display: none;
+                }
+                .fa-desktop
+                {
+                    display: contents;
+                }
+            }
+        }
+    }
+
+    .restaurant
+    {
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+        .__box
+        {
+            display: flex;
+            margin-right: 5%;
+        }
+    }
+
+    footer 
+    {
+        padding-bottom: 2%;
+
+        h4 
+        {
+            padding-top: 2%;
+            margin: 1%;
+            margin-left: 5%;
+            margin-top: 0;
+        }
+
+        .fas 
         {
             display: none;
         }
-        a
+        nav 
         {
-            padding: 1%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-right: 5%;
+
         }
     }
-    
-     /*Fonctionnement*/
-     .fonctionnement
-     {
-        background-color: rgb(235, 232, 232);
-     }
-     .fonctionnement h2
-     {
-         margin-top: 0;
-         padding-top: 2%;
-     }
-     .fonctionnement .fas
-     {
-         display: none;
-     }
-     .fonctionnement__box
-     {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-right: 3%;
-        flex-wrap: wrap;
-     }
-     .fonctionnement__box--element
-     {
-         padding: 2%;
-         width: 24%;
-         background-color: white;
-         white-space: nowrap;
-     }
-
-     /* Restaurants */
-     .restaurant 
-     {
-         padding: 0%;
-         margin: 0%;
-         margin-right: 3%;
-         border-radius: 20px;
-         background-color: transparent;
-         padding-top: 2%;
-     }
-     .restaurant__box
-     {
-         display: flex;
-         flex-direction: row;
-         flex-wrap: wrap;
-         justify-content: space-between;
-     }
-     .restaurant__box article
-     {
-         max-width: 550px;
-     } 
-     .restaurant__box--detail
-     {
-         top: 0;
-         left: 60%;
-         width: initial;
-     }
-     .restaurant__box em
-     {
-         left: 5%;
-         right: initial;
-     }
-     .restaurant__box .coeurrempli
-     {
-         font-size: 2em;
-         bottom: 10%;
-     }
-     .restaurant__box .coeurvide
-     {
-        font-size: 2em;
-        bottom: 10%;
-    }
-
-     /* Pied de page */
-     footer
-     {
-         padding: 1%;
-     }
-     footer nav
-     {
-         display: flex;
-         justify-content: space-between;
-         flex-direction: row;
-         margin: 3%;
-         padding: 0;
-     }
-     footer .fas
-     {
-         display: none;
-     }
-     footer h4
-     {
-         display: none;
-     }
-
-
 }

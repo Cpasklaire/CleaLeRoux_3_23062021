@@ -1,0 +1,65 @@
+@media screen and (min-width: 813px)
+{
+    .bodypage
+    {
+        .top     
+        {
+            width: 100%;
+            img 
+            {
+                width: 100%;
+                height: 600px;
+            }
+            .__nom
+            {
+                padding: 5%;
+                padding-top: 3%;
+                width: 90%;
+                font-size: 2em;
+            }
+        }
+
+        .repas
+        {
+            padding-bottom: 3%;
+
+            .entre, .plat, .dessert
+            {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            article
+            {
+                width: 30%;
+                height: 100px;
+
+                .__check .fa-check-circle 
+                {
+                    top: 40px;
+                    right: -53px;
+                }
+            }
+
+            h3 
+            {
+                padding-top: 0%;
+                font-size: 2em;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
