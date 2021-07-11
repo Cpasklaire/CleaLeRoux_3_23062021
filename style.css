@@ -627,6 +627,10 @@ footer strong {
   padding-bottom: 1%;
 }
 
+.repas h4 {
+  font-weight: bold;
+}
+
 .repas article {
   background-color: white;
   border-radius: 20px;
@@ -667,10 +671,10 @@ footer strong {
 
 .repas article .__plat {
   margin: 3%;
-  line-height: 150%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  line-height: 1em;
 }
 
 .repas article .__check {

@@ -18,6 +18,11 @@
             padding-bottom: 1%;
         }
     }
+    h4 
+    {
+        font-weight: bold;
+        
+    }
     article
     {
         background-color: white;
@@ -48,10 +53,10 @@
         .__plat
         {
             margin: 3%;
-            line-height: 150%;
             white-space: nowrap;
             text-overflow: ellipsis;
-            overflow: hidden;  
+            overflow: hidden;
+            line-height: 1em;
         }
         .__check
         {
