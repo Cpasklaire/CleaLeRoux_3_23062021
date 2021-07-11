@@ -1,28 +1,43 @@
+.main
+{
+    animation-name: font;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
 .chargement
 {
     position: absolute;
     background-color: white;
     width: 100%;
     height: 100%;
-    animation: disparition 0s linear 3s both;
+    animation-name: disparition;
+    animation-fill-mode: forwards;
+    animation-duration: 0s;
+    animation-delay: 3s;
     z-index: 2;
     .fas
     {
         position: relative;
         color: $couleur-primaire;
-        font-size: 4em;
+        font-size: 3em;
     }
         .fa-fish
         {
-            top: 40%;
-            left: 30%;
-            animation: poisson 1s 1s both;
+            top: 30%;
+            left: 20%;
+            animation-name: poisson;
+            animation-delay: 1s;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
         }
         .fa-pepper-hot
         {
-            top: 40%;
+            top: 30%;
             left: 55%;
-            animation: piment 1s 2s  both;
+            animation-name: piment;
+            animation-delay: 2s;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
         }
     .__ohmyfood
     {
@@ -34,13 +49,17 @@
         font-size: 2.5em;
         .--ohmy
         {
-            animation: coloration 2s 1s;
+            animation-name: coloration;
+            animation-delay: 1s;
+            animation-duration: 2s;
             padding: 1%;
             font-family: $font-titre;
         }
         .--food
         {
-            animation: coloration 2s 2s;
+            animation-name: coloration;
+            animation-delay: 2s;
+            animation-duration: 1s;
             padding: 1%;
             font-family: $font-titre;
         }

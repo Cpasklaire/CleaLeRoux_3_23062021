@@ -1,0 +1,98 @@
+.repas
+{
+    background-color: $couleur-fontclaire;
+    padding: 3%;
+    padding-bottom: 10%;
+    animation-name: apparition;
+    animation-duration: 2s;
+    animation-delay: 0;
+    animation-timing-function: ease-in;
+    h3
+    {
+        padding-top: 5%;
+        border-bottom: $couleur-fontclaire solid;
+        padding-bottom: 1%;
+        span
+        {
+            border-bottom: $couleur-tertiaire solid;
+            padding-bottom: 1%;
+        }
+    }
+    article
+    {
+        background-color: white;
+        border-radius: 20px;
+        height: 70px;
+        overflow: hidden;
+        margin-top: 4%;
+        margin-bottom: 4%;
+        box-shadow: $couleur-ombre 1px 3px 4px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+            &:hover
+            {      
+                & > .__check
+                {
+                    transition: transform 1s ease-in-out;
+                    transform: translate(-70px);                
+                    
+                    & > .fa-check-circle
+                    {
+                        transform: rotate(1turn);
+                        transition: transform 1s ease-in-out;
+                    }
+                }
+
+            }   
+        .__plat
+        {
+            margin: 3%;
+            line-height: 150%;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;  
+        }
+        .__check
+        {
+            position: relative;
+            height: 100%;
+            width: 60px;
+
+            span
+            {
+                position: absolute;
+                right: 20px;
+                bottom: 20%;
+                font-weight: bold;
+            }
+            .fas
+            {
+                background-color: $couleur-tertiaire;
+                position: absolute;
+                font-size: 1.5em;
+            }
+            .--fond
+            {
+                padding: 35%;
+                height: 100%;
+                color: $couleur-tertiaire;
+                top: 0px;
+                right: -73px;
+            }
+            .fa-check-circle
+            {               
+                color: white;
+                top: 25px;
+                right: -53px;
+            }
+        
+
+        }
+    }
+}
+
+
+
+
+

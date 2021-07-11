@@ -18,7 +18,7 @@
     z-index: 3;
     color: white;
     background-color: white;
-    transition: transform 500ms;
+    transition: transform 1s;
     transform-origin: center top;
 }
 .--coeurvide
@@ -34,4 +34,25 @@
         {
         transform: scaleY(0);
         }
+}
+
+.top
+{
+    .--coeurrempli
+    {
+        right: 10%;
+        bottom: 50%;
+    }
+    .--calque
+    {
+        right: 10%;
+        bottom: 40%;
+        color: $couleur-fontclaire;
+        background-color: $couleur-fontclaire;
+    }
+    .--coeurvide
+    {
+        right: 10%;
+        bottom: 50%;
+    }
 }

@@ -1,4 +1,25 @@
 /*chargement*/
+@keyframes font {
+    0%
+    {
+        background-color: transparent;
+        width: 0;
+        height: 0;
+        color: transparent;
+        overflow:hidden;
+        box-sizing:border-box;
+    }
+    99%
+    {
+        background-color: transparent;
+        width: 0;
+        height: 0;
+        color: transparent;
+        overflow:hidden;
+        box-sizing:border-box;
+    }
+}
+
 @keyframes disparition
 {
     to
@@ -57,4 +78,20 @@
         transform: translateX(-100px) translateY(160px);
         color: transparent;
     }
+}
+
+/*apparition*/
+@keyframes apparition
+{
+    from
+    {
+        opacity: 0;
+        margin-top: 10%;
+    }
+    to
+    {
+        opacity: 100%;
+        margin-top: 0%;
+    }
+
 }
