@@ -24,6 +24,7 @@
         font-size: 1.2em;
         
     }
+
     article
     {
         background-color: white;
@@ -36,7 +37,86 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-            &:hover
+        flex-direction: row;
+    
+        &:hover 
+        {      
+            & > .prix 
+            {
+                transition: transform 1s ease-in-out;
+                transform: translate(-70px); 
+            }
+            & > .__check
+            {
+                transition: transform 1s ease-in-out;
+                transform: translate(-70px);                       
+            }
+            & > .fa-check-circle
+            {
+                transform: rotate(1turn);
+                transition: transform 1s ease-in-out;
+            }
+        }
+        .__plat
+        {
+            margin: 3%;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            line-height: 1em;
+            font-size: 0.9em;
+            flex: 1;
+        }
+        .prix
+        {
+            font-weight: bold;
+            height: 100%;
+            text-align: center;
+            padding-top: 25%;
+        }
+        .__check
+        {
+            position: relative;
+            color: $couleur-tertiaire;
+                .fas
+                {
+                    background-color: $couleur-tertiaire;
+                    position: absolute;
+                    font-size: 1.5em;
+                }
+                .--fond
+                {
+                    padding: 35%;
+                    height: 100%;
+                    color: $couleur-tertiaire;
+                    top: 0px;
+                    right: -73px;
+                }
+                .fa-check-circle
+                {               
+                    color: white;
+                    top: 25px;
+                    right: -53px;
+                } 
+        }
+    }
+
+
+
+    /*
+    article
+    {
+        background-color: white;
+        border-radius: 20px;
+        height: 70px;
+        overflow: hidden;
+        margin-top: 4%;
+        margin-bottom: 4%;
+        box-shadow: $couleur-ombre 1px 3px 4px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+            &:hover 
             {      
                 & > .__check
                 {
@@ -98,7 +178,7 @@
         
 
         }
-    }
+    }*/
 }
 
 
