@@ -3,10 +3,29 @@
     background-color: $couleur-fontclaire;
     padding: 3%;
     padding-bottom: 10%;
+
+    .entre
+    {
+
+    animation-delay: 0;
+    animation-timing-function: ease-in;    
     animation-name: apparition;
     animation-duration: 2s;
-    animation-delay: 0;
-    animation-timing-function: ease-in;
+    }
+    .plat 
+    {
+        animation-delay: 500ms;
+        animation-timing-function: ease-in;    
+        animation-name: apparition;
+        animation-duration: 2s;
+    }
+    .dessert
+    {
+        animation-delay: 1s;
+        animation-timing-function: ease-in;    
+        animation-name: apparition;
+        animation-duration: 2s;
+    }
     h3
     {
         padding-top: 5%;

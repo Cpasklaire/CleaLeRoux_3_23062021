@@ -77,6 +77,63 @@
   bottom: 45%;
 }
 
+.coeur {
+  position: absolute;
+  right: 50px;
+  top: 5%;
+}
+
+.heart-container {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.heart-clip {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  -webkit-clip-path: url(#svgPath);
+          clip-path: url(#svgPath);
+}
+
+.heart-clip:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
+.heart-clip::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: transparent;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: opacity 0.2s linear, -webkit-transform 0.2s linear;
+  transition: opacity 0.2s linear, -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear, opacity 0.2s linear;
+  transition: transform 0.2s linear, opacity 0.2s linear, -webkit-transform 0.2s linear;
+  -webkit-transform-origin: center 60%;
+          transform-origin: center 60%;
+}
+
+.heart-stroke {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: black;
+}
+
 .__concept a, .repas .commande {
   border-radius: 20px;
   padding: 4%;
@@ -303,6 +360,28 @@
   from {
     opacity: 0;
     margin-top: 10%;
+  }
+  to {
+    opacity: 100%;
+    margin-top: 0%;
+  }
+}
+
+@-webkit-keyframes apparitiondesktop {
+  from {
+    opacity: 0;
+    margin-top: 5%;
+  }
+  to {
+    opacity: 100%;
+    margin-top: 0%;
+  }
+}
+
+@keyframes apparitiondesktop {
+  from {
+    opacity: 0;
+    margin-top: 5%;
   }
   to {
     opacity: 100%;
@@ -631,7 +710,7 @@ footer strong {
   padding-top: 9%;
   padding-bottom: 12%;
   margin: 0;
-  bottom: -15%;
+  bottom: -10%;
   width: 100%;
 }
 
@@ -645,14 +724,39 @@ footer strong {
   background-color: #f6f6f6;
   padding: 3%;
   padding-bottom: 10%;
-  -webkit-animation-name: apparition;
-          animation-name: apparition;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+}
+
+.repas .entre {
   -webkit-animation-delay: 0;
           animation-delay: 0;
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
+  -webkit-animation-name: apparition;
+          animation-name: apparition;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.repas .plat {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-name: apparition;
+          animation-name: apparition;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.repas .dessert {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-name: apparition;
+          animation-name: apparition;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .repas h3 {
@@ -881,17 +985,102 @@ footer strong {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .bodypage .repas .entre {
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-animation-name: apparitiondesktop;
+            animation-name: apparitiondesktop;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+  }
+  .bodypage .repas .plat {
+    -webkit-animation-delay: 500ms;
+            animation-delay: 500ms;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-animation-name: apparitiondesktop;
+            animation-name: apparitiondesktop;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+  }
+  .bodypage .repas .dessert {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-animation-name: apparitiondesktop;
+            animation-name: apparitiondesktop;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+  }
+  .bodypage .repas .wrap {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bodypage .repas .wrap article {
+    width: 90%;
+  }
   .bodypage .repas article {
     width: 30%;
     height: 100px;
   }
   .bodypage .repas article .__check .fa-check-circle {
-    top: 40px;
-    right: -53px;
+    right: 0px;
+  }
+  .bodypage .repas article .fa-check-circle {
+    left: 0%;
+  }
+  .bodypage .repas article:hover .__prix {
+    -ms-flex-negative: 4;
+        flex-shrink: 4;
+  }
+  .bodypage .repas article:hover .__check {
+    width: 20%;
+    -webkit-transition: ease-in-out 1s;
+    transition: ease-in-out 1s;
+  }
+  .bodypage .repas article:hover .__check .fa-check-circle {
+    -webkit-transform: rotate(-1turn);
+            transform: rotate(-1turn);
+    -webkit-transition: ease-in-out 1s;
+    transition: ease-in-out 1s;
   }
   .bodypage .repas h3 {
     padding-top: 0%;
     font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 1300px) {
+  .restaurant {
+    padding-top: 5%;
+  }
+  .restaurant .__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-right: 5%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .restaurant .__box article {
+    width: 320px;
+  }
+  .bodypage .top img {
+    width: 100%;
+    height: 400px;
   }
 }
 /*# sourceMappingURL=style.css.map */

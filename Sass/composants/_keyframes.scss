@@ -93,5 +93,18 @@
         opacity: 100%;
         margin-top: 0%;
     }
+}
 
+@keyframes apparitiondesktop
+{
+    from
+    {
+        opacity: 0;
+        margin-top: 5%;
+    }
+    to
+    {
+        opacity: 100%;
+        margin-top: 0%;
+    }
 }

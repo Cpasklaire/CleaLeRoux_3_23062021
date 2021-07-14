@@ -29,6 +29,40 @@
                 justify-content: space-between;
             }
 
+            .entre
+            {     
+                animation-delay: 0;
+                animation-timing-function: ease-in;    
+                animation-name: apparitiondesktop;
+                animation-duration: 1s;
+            }
+            .plat 
+            {
+                animation-delay: 500ms;
+                animation-timing-function: ease-in;    
+                animation-name: apparitiondesktop;
+                animation-duration: 1s;
+            }
+            .dessert
+            {
+                animation-delay: 1s;
+                animation-timing-function: ease-in;    
+                animation-name: apparitiondesktop;
+                animation-duration: 1s;
+            }
+
+                .wrap
+                {
+                    width: 100%;
+                    flex-direction: column;
+
+                    article
+                    {
+                        width: 90%;
+                    }
+                }
+            
+
             article
             {
                 width: 30%;
@@ -36,8 +70,29 @@
 
                 .__check .fa-check-circle 
                 {
-                    top: 40px;
-                    right: -53px;
+                    right: 0px;
+                }
+                .fa-check-circle 
+                {
+                    left: 0%;
+                }
+                &:hover 
+                {
+                    .__prix 
+                    {
+                        flex-shrink: 4;
+                    }
+                    .__check 
+                    {
+                        width: 20%;
+                        transition: ease-in-out 1s;            
+                        .fa-check-circle
+                        {
+                        transform: rotate(-1turn);
+                        transition: ease-in-out 1s;
+                        }
+                    }
+        
                 }
             }
 
