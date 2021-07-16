@@ -1,42 +1,57 @@
-@keyframes animcoeurrempli 
-{
-    from 
-    {
-        font-size: 0em;        
-    }
-    to
-    {
-        font-size: 1.7em;
-        right: 15%;
-    }
-}
-
-.__box--coeurrempli
+.coeurrempli
 {
     color: transparent;
     background: $degrade;
     -webkit-background-clip: text;
     position: absolute;
-    right: 20%;
-    bottom: 35%;
-    font-size: 0em;
-    animation-fill-mode: both;  
-    
-    
+    font-size: 1.7em;
+    z-index: 1;
 }
-.__box--coeurvide
+.calque
+{
+    position: absolute;
+    font-size: 1.7em;
+    z-index: 2;
+    color: white;
+    background-color: white;
+    transition: transform 1s;
+    transform-origin: center top;
+}
+.coeurvide
 {
     color: black;
     background-color: transparent;
     position: absolute;
-    right: 15%;
-    bottom: 35%;
-    font-size: 1.7em;    
-    &:hover + .__box--coeurrempli
-    {    
-            animation-name: animcoeurrempli;
-            animation-duration: 1s; 
-               
+    font-size: 1.7em;
+    z-index: 3;
+        &:hover + .calque
+        {
+        transform: scaleY(0);
+        }
+        &:hover
+        {
+            opacity: 0;  
+        }
+}
+.restaurant
+{
+    .coeurvide, .calque, .coeurrempli
+    {
+        right: 15%;
+        bottom: 35%;
     }
-    
+
+}
+.top
+{
+    .coeurvide, .calque, .coeurrempli
+    {
+        right: 10%;
+        bottom: 45%;
+    }    
+    .calque
+    {
+        color: $couleur-fontclaire;
+        background-color: $couleur-fontclaire;
+    }
 }

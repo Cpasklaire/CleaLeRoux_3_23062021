@@ -23,6 +23,11 @@
         {
             padding-bottom: 3%;
 
+            .__plat--sautligne
+            {
+                display: none;
+            }
+
             .entre, .plat, .dessert
             {
                 display: flex;
@@ -31,7 +36,6 @@
 
             .entre
             {     
-                animation-delay: 0;
                 animation-timing-function: ease-in;    
                 animation-name: apparitiondesktop;
                 animation-duration: 1s;
