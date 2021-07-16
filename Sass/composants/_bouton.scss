@@ -6,7 +6,7 @@
     box-shadow: $couleur-ombre 2px 3px 3px;
     line-height: 500%;
     background: $degrade;
-    &:hover
+    &:hover, &:focus, &:active
     {
         box-shadow: $couleur-ombre 3px 5px 5px;
         filter: brightness(110%);

@@ -79,7 +79,7 @@
    overflow: hidden;
    clip-path: url(#svgPath);
 
-   &:hover {
+   &:hover, &:focus {
       &::before {
          transform: scale(1);
          opacity: 1;
