@@ -1,4 +1,48 @@
+@keyframes animcoeurrempli 
+{
+    from 
+    {
+        font-size: 0em;        
+    }
+    to
+    {
+        font-size: 1.7em;
+        right: 15%;
+    }
+}
+
 .--coeurrempli
+{
+    color: transparent;
+    background: $degrade;
+    -webkit-background-clip: text;
+    position: absolute;
+    right: 20%;
+    bottom: 35%;
+    font-size: 0em;
+    animation-fill-mode: both;  
+    
+    
+}
+.--coeurvide
+{
+    color: black;
+    background-color: transparent;
+    position: absolute;
+    right: 15%;
+    bottom: 35%;
+    font-size: 1.7em;    
+    &:hover + .--coeurrempli
+    {    
+            animation-name: animcoeurrempli;
+            animation-duration: 1s; 
+               
+    }
+    
+}
+
+
+/*.--coeurrempli
 {
     color: transparent;
     background: $degrade;
@@ -56,8 +100,8 @@
         right: 10%;
         bottom: 45%;
     }
-}
-
+}*/
+/*
 .coeur 
 {
     position: absolute;
@@ -107,4 +151,4 @@
    top: 0;
    left: 0;
    fill: black;
-}
+}*/
