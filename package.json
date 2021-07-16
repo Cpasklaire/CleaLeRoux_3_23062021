@@ -4,7 +4,7 @@
   "description": "projet 3",
   "main": "index.js",
   "scripts": {
-    "start": "sass --watch ./Saas:./publique/css/style.css --style compressed"
+    "start": "sass --watch ./sass:./publique/css --style compressed"
   },
   "repository": {
     "type": "git",
